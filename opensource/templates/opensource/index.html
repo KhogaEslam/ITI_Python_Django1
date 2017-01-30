@@ -1,0 +1,16 @@
+<table border ='1'>
+  <thead>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Track</th>
+    <th>Actions</th>
+  </thead>
+    {% for st in allStudents %}
+      <tr>
+        <td>{{st.stName}}</td>
+        <td>{{st.stAge}}</td>
+        <td>{{st.stTrack}}</td>
+        <td><a href="{{st.id}}/details">details</td>
+      </tr>
+    {% endfor %}
+</table>
